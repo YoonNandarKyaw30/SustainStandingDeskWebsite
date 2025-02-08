@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Pyament</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="header">
+        <nav class="navbar navbar-expand-lg custom-navbar shadow">
+            <div class="container d-flex justify-content-between  align-item-center">
+                <div class="logo">
+                    <img src="./images/logo5.jpg" alt="logo">
+                </div>
+                <h1 class="navbar-brand h1 align-item-center">
+                    SUSTAIN
+                </h1>
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="nav-items-container">
+                        <li class="nav-item">
+                            <a class="nav-link " href="index.html" accesskey="h">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="products.html" accesskey="p">Rising Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="health.html" accesskey="b">Health Benefit</a>
+                        </li>
+                        <!-- Add a dropdown for Rising Desks -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#">About</a>
+                            <div class="dropdown-content">
+                                <a href="contact.html" accesskey="c">Contact us</a>
+                                <a href="about.html" accesskey="a">About us</a>
+                                <a href="service.html" accesskey="s">Our Service</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="container col-lg-auto">
+                    <ul class="nav-items-container">
+                        <li class="nav-item ">
+                            <a class="nav-icon position-relative text-decoration-none" href="products.html">
+                                <i class="fa fa-fw fa-search text-dark mr-1"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-icon position-relative text-decoration-none" href="payment.html">
+                                <i class="fa fa-fw fa-cart-arrow-down text-dark mr-1"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Header end -->
+
+    <!-- Pyament Start-->
+    <section class="py-lg-5">
+        <div class='container-payment'>
+            <div class='window'>
+                <div class='order-info'>
+                    <div class='order-info-content'>
+                        <h2 class="h2 py-2">Order Summary</h2>
+                        <div class='line'></div>
+                        <table class='order-table'>
+                            <tr>
+                                <th>Order Id</th>
+                                <th>Image</th>
+                                <th>Products</th>
+                                <th>Quality</th>
+                                <th>Uni Price</th>
+                                <th>Amount</th>
+                            </tr>
+                            <tr>
+                                <td>DEK-0011</td>
+                                <td><a href="products.html"><img src="images/converter2.webp" alt="img"></a>
+                                </td>
+                                <td>Converter Standing Desk</td>
+                                <td><input class="small-input" type="number" value="2"></td>
+                                <td>$ 4500</td>
+                                <td>$ 9000</td>
+                            </tr>
+                            <tr>
+                                <td>DEK-0013</td>
+                                <td><a href="products.html"><img src="images/L-shaped6.webp" alt="img"></a>
+                                </td>
+                                <td>L-Shaped Standing Desk</td>
+                                <td><input class="small-input" type="number" value="1"></td>
+                                <td>$ 3500</td>
+                                <td>$ 3500</td>
+                            </tr>
+                            <tr>
+                                <td>DEK-0023</td>
+                                <td><a href="products.html"><img src="images/adjustable4.webp" alt="img"></a>
+                                </td>
+                                <td>Adjustable Standing Desk</td>
+                                <td><input class="small-input" type="number" value="3"></td>
+                                <td>$ 5000</td>
+                                <td>$ 15,000</td>
+                            </tr>
+                        </table>
+                        <div class='line'></div>
+                        <div class='total'>
+                            <div style='float:left;'>
+                                <p>Subtotal</p>
+                                <p>Discount</p>
+                                TOTAL
+                            </div>
+                            <div style='float:right; text-align:right;'>
+                                <p>$ 20500</p>
+                                <p>(10%) $ 2050</p>
+                                18450
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="credit-info">
+                    <div class="credit-info-content">
+                        <h3 class="payment-heading">Payment Information</h3>
+                        <div class="py-3">
+                            <label for="full-name">Full Name </label>
+                            <input class="large-input" id="full-name" name="full-name" placeholder="Enter your name"
+                                required type="text" accesskey="n">
+                        </div>
+                        <div class="py-3">
+                            <div class="container">
+                                <a href="#"><img src="images/atm.png" alt="bankcard"></a>
+                                <a href="#"><img src="images/mobilebanking.png" alt="bankcard"></a>
+                                <a href="#"><img src="images/visa.png" alt="bankcard"></a>
+                                <a href="#"><img src="images/runpay.png" alt="bankcard"></a>
+                            </div>
+                            <label for="credit-card-num">Card Number
+                            </label>
+                            <input class="large-input" id="credit-card-num" name="credit-card-num"
+                                placeholder="1111-2222-3333-4444" required type="text" accesskey="n">
+                        </div>
+                        <div>
+                            <p class="expires">Expires on:</p>
+                            <div class="card-experation">
+                                <label for="expiration-month">Month</label>
+                                <select id="expiration-month" name="expiration-month" required>
+                                    <option value="">Month:</option>
+                                    <option value="">January</option>
+                                    <option value="">February</option>
+                                    <option value="">March</option>
+                                    <option value="">April</option>
+                                    <option value="">May</option>
+                                    <option value="">June</option>
+                                    <option value="">July</option>
+                                    <option value="">August</option>
+                                    <option value="">September</option>
+                                    <option value="">October</option>
+                                    <option value="">November</option>
+                                    <option value="">Decemeber</option>
+                                </select>
+
+                                <label class="expiration-year">Year</label>
+                                <select id="experation-year" name="experation-year" required>
+                                    <option value="">Year</option>
+                                    <option value="">2023</option>
+                                    <option value="">2024</option>
+                                    <option value="">2025</option>
+                                    <option value="">2026</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-lock"></i>
+                            Your credit card number is encrypted
+                        </div>
+                        <div class="py-3">
+                            <button class="favorite styled" type="submit">Submit For Your Payment</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Payment-->
+
+    <!--Start Footer -->
+    <footer class="footer">
+        <div class="FC">
+            <div class="footer-content">
+                <div class="col-md-4">
+                    <ul class="list-unstyled footer-links">
+                        <li>
+                            <a href="#"><img src="images/desk.png" alt="Desk Icon " class="footer-icon"></a>
+                            <a class="h3 text-decoration-none" href="#">
+                                Rising Desk Co.Ltd
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/phone.png" alt="Desk Icon " class="footer-icon"></a>
+                            <a class="text-decoration-none" href="tel:010-020-0340">(453) 679-7890</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6 ">
+                    <div class="footer-links">
+                        <h2 class="h2 border-bottom pb-3 w-25 border-light">Further Info</h2>
+                        <ul>
+                            <li><a class="text-decoration-none" href="index.html">Home</a></li>
+                            <li><a class="text-decoration-none" href="products.html">Rising Product</a></li>
+                            <li><a class="text-decoration-none" href="health.html">Health Benifit</a></li>
+                            <li><a class="text-decoration-none" href="contact.html">Contact Us</a></li>
+                            <li><a class="text-decoration-none" href="about.html">About Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <ul class="list-inline text-left footer-icons">
+                        <li class="list-inline-item">
+                            <a href="#"><img src="images/facebook.png" class="footer-icon" alt="Desk Icon "></a>
+                        </li>
+
+                        <li class="list-inline-item">
+                            <a href="#"><img src="images/instagram.png" class="footer-icon" alt="Desk Icon "></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#"><img src="images/twitter.png" class="footer-icon" alt="Desk Icon "></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#"><img src="images/viber.png" class="footer-icon" alt="Desk Icon "></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+    <script src="./js/samplejs.js" defer></script>
+</body>
+
+</html>
